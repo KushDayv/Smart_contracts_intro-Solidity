@@ -24,10 +24,10 @@ Requirements :
 
   Get started with truffle --> https://www.youtube.com/watch?v=OIHexEUmUmQ&t=2s
 
-
-----------------------------Smart contracts are Interesting :) ----------------------------------------
-
   Truffle boxes --> https://trufflesuite.com/boxes/
+
+
+  ----------------------------Smart contracts are Interesting :) ----------------------------------------
 
 
 
