@@ -1,6 +1,8 @@
 ### Smart_contracts_intro-Solidity
 This is a sample smart contract using Solidity, Ganache, and Truffle,VS Code.
 
+Smart contracts are Interesting :)
+
 Simple DApp with --> https://www.youtube.com/watch?v=JXa_Y-17Oj4&t=1089s
 
 Requirements :
@@ -26,7 +28,7 @@ Requirements :
 
   Truffle boxes --> https://trufflesuite.com/boxes/
 
-Smart contracts are Interesting :)
+
 
   
 
