@@ -27,6 +27,11 @@ Requirements :
   Truffle boxes --> https://trufflesuite.com/boxes/
 
 
+In the SmartLendingsoln directory, are two contracts to demonstrate property management via blockchain. 
+
+In the VendingMachine Directory is a sample contract of a vending machine to sell some dognuts. 
+
+
   ----------------------------Smart contracts are Interesting :) ----------------------------------------
 
 
