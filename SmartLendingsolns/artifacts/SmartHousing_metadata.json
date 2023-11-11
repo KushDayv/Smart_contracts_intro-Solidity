@@ -1,0 +1,397 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "propertyID",
+						"type": "uint256"
+					}
+				],
+				"name": "PropertyRented",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "propertID",
+						"type": "uint256"
+					}
+				],
+				"name": "propertyAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rentAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_securityDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_repairServices",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_initialPayment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_propertyDescription",
+						"type": "string"
+					}
+				],
+				"name": "addProperty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_tenantName",
+						"type": "string"
+					}
+				],
+				"name": "addTenant",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					}
+				],
+				"name": "getPropertyInformation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "securityDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "repairServices",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isProperty",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "initialPayment",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tenantAddress",
+						"type": "address"
+					}
+				],
+				"name": "getTenantInformation",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tenantName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastRentPaid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastElectricBillPaid",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rentAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "payRent",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_waterBillAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "payWaterBill",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "properties",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rentAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "securityDeposit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "repairServices",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isProperty",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "initialPayment",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "currentTenant",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "propertyID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_propertyID",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_initialPayment",
+						"type": "uint256"
+					}
+				],
+				"name": "rentProperty",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "tenants",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "tenantAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tenantName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastRentPaid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastWaterBillPaid",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SmartLendingsolns/Makeja-Rentals.sol": "SmartHousing"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SmartLendingsolns/Makeja-Rentals.sol": {
+			"keccak256": "0x9a9ca6f7afa0a38b88cd9f617e25e0a15f11c3b992da1cf0b43906075f2505dd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bdacd30f99817ee43e48c55c7d7c68aff121fbea827e2a2e2f177fb07caf0a20",
+				"dweb:/ipfs/QmfUco7xZotV5YAvUp6pUCUX12eYXja8jnaUi6jUrSFHcq"
+			]
+		}
+	},
+	"version": 1
+}
