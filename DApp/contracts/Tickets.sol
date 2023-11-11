@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
 pragma solidity ^0.8.13;
 
-uint256 constant TOTAL_TICKETS = 10;
+uint256 constant TOTAL_TICKETS = 20;
 
 contract Tickets {
     //this is like the public address...once the contract is deployed..the address will be stored in the block chain. 
