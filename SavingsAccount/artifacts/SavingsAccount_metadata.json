@@ -1,0 +1,266 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_interestRate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Deposit",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "InterestCredited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawal",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "creditInterest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTransactionHistory",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct SavingsAccount.Transaction[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "interestRate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transactionHistory",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawFunds",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SavingsAccount/smartsavings.sol": "SavingsAccount"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SavingsAccount/smartsavings.sol": {
+			"keccak256": "0xcaccb7aa54a3dc3a42c9df88d9d3170e74ebcf2f4cabd5249cc0b13a01ec93d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://721f3acace1a63f53166ad6032210a353180567edd2addafd5b5c71f03bc1e97",
+				"dweb:/ipfs/QmSUzJfgcJyTaao7qYwXzsapdifbV5sdeuJy6dghKneSqr"
+			]
+		}
+	},
+	"version": 1
+}
