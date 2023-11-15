@@ -23,7 +23,7 @@ contract SavingsAccount{
 
     modifier onlyOwner(){
         require(msg.sender == owner, "Only owner can call this function");
-        _;
+        _; //The underscore represents the actual body of the function that uses the modifier
     }
 
     constructor(uint _interestRate){
